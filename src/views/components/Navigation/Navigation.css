@@ -1,0 +1,19 @@
+.navbar
+{
+    background-color: rgb(225, 147, 3) !important;
+}
+
+.fa-user
+{
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: rgb(225, 147, 3);
+}
+
+.bottom-bar
+{
+    width: 100% !important;
+    height: 400px !important;
+}
