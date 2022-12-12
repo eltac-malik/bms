@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Navigation.css'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,8 +8,8 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTranslation} from "react-i18next";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import i18n from 'langs/i18n'
-import './Navigation.css'
 
 
 export default function ButtonAppBar({setLeft,setBottom}) {
@@ -29,11 +30,12 @@ export default function ButtonAppBar({setLeft,setBottom}) {
           >
             <MenuIcon />
           </IconButton>
+          
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {t("business")}
           </Typography>
           <Button onClick={()=> setBottom(true)} color="inherit">
-          <i class="fa-solid fa-user"></i>
+          <AccountCircleIcon/>
           </Button>
           <select onChange={(e)=> i18n.changeLanguage(e.target.value)}>
             <option value='en'>Eng</option>

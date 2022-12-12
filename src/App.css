@@ -1,5 +1,13 @@
+*
+{
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif !important;
+}
+
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .App-logo {
@@ -28,6 +36,50 @@
   color: #61dafb;
 }
 
+.employee-table
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.operation
+{
+  width: 70%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emp-table
+{
+  margin-top: 20px;
+  width: 70% !important;
+  background-color: rgb(225, 147, 3) !important;
+}
+
+.button-mui
+{
+  background-color:#003f7d !important;
+}
+.add-employee
+{
+  background-color: green !important;
+}
+.return
+{
+  background-color: red !important;
+}
+.simple-table
+{
+  color: white !important;
+  font-size: 20px !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +87,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media(max-width:900px)
+{
+  .emp-table
+  {
+    width: 90% !important;
+  }  
+  .operation
+  {
+    width: 90%;
+  }
+
+
 }

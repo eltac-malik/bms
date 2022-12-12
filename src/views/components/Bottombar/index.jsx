@@ -1,34 +1,35 @@
 import * as React from 'react';
-import {useState} from 'react'
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import {Link} from 'react-router-dom'
+import {bottomContent} from 'common/route'
 
 export default function TemporaryDrawer({bottom,setBottom}) {
-    
+  
+  
+
   const list = (anchor) => (
     <Box
       className='bottom-bar'
       onClick={()=> setBottom(false)}
     >
       <List>
-        {['Profile', 'Settings'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {bottomContent.map((e,i) => (
+          <Link to={e.url}>
+          <ListItem key={i} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {e.icon}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={e.name} />
             </ListItemButton>
           </ListItem>
+          </Link>
         ))}
       </List>
     </Box>

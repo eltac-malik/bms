@@ -10,7 +10,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import {Link} from 'react-router-dom'
-import {content} from 'common/constant'
+import {content} from 'common/route'
 
 export default function TemporaryDrawer({left,setLeft}) {
 
@@ -22,8 +22,8 @@ export default function TemporaryDrawer({left,setLeft}) {
     >
       <List>
         {content.map((e,i) => (
-          <Link to={e.url}>
-          <ListItem key={i} disablePadding>
+          <Link key={i}  to={e.url}>
+          <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 {e.icon}

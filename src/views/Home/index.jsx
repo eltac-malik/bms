@@ -1,13 +1,12 @@
-import React,{useState} from 'react'
-import Navigation from 'views/components/Navigation'
+import React from 'react'
 
-function Home({setLeft,setBottom}) {
+function Home() {
 
 
   return (
-    <>
-      <Navigation setLeft={setLeft} setBottom={setBottom}/>
-    </>
+    <div>
+      home
+    </div>
   )
 }
 
