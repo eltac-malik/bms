@@ -1,0 +1,14 @@
+.step-content
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.custom-field
+{
+    width: 90% !important;
+    margin: 10px 0 !important;
+}

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useState} from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,6 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import {useNavigate} from 'react-router-dom'
+import EmpModal from 'views/components/Modals/EmpModal'
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -59,6 +61,7 @@ const rows = [
 ];
 
 export default function BasicTable() {
+  const [open, setOpen] = React.useState(false);
 
   const navigate = useNavigate()
 
@@ -66,8 +69,9 @@ export default function BasicTable() {
     <div className='employee-table'>
     <div className="operation">
     <Button className='button-mui return' variant="contained" onClick={()=> navigate(-1)}>Go Back</Button>
-    <Button className='button-mui add-employee' variant="contained">Add</Button>
+    <Button className='button-mui add-employee' variant="contained" onClick={()=> setOpen(true)}>Add</Button>
     </div>
+    <EmpModal open={open} setOpen={setOpen}/>
     <TableContainer className='emp-table' component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
