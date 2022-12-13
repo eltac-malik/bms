@@ -79,6 +79,16 @@
   font-size: 20px !important;
   font-family: 'Roboto', sans-serif !important;
 }
+.link
+{
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+  color: white !important;
+  justify-content: space-between;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -99,6 +109,11 @@
   {
     width: 90%;
   }
-
-
 }
+
+
+
+
+
+
+

@@ -12,5 +12,43 @@
       "count": 2,
       "price": 1
     }
+  ],
+  "employeers":[
+    {
+      "id":"1",
+      "name":"Eltac",
+      "surname":"Malik",
+      "age":22,
+      "identity":"16416464",
+      "location":"Baku",
+      "phone":"+994508253434",
+      "extra_phone":"+004503421223",
+      "category":"cashier",
+      "salary":"300"
+    },
+    {
+      "id":"2",
+      "name":"test",
+      "surname":"test",
+      "age":22,
+      "identity":"16416464",
+      "location":"Baku",
+      "phone":"+994508253434",
+      "extra_phone":"+004503421223",
+      "category":"cashier",
+      "salary":"300"
+    },
+    {
+      "id":"3",
+      "name":"dsfc",
+      "surname":"dsds",
+      "age":22,
+      "identity":"16416464",
+      "location":"Baku",
+      "phone":"+994508253434",
+      "extra_phone":"+004503421223",
+      "category":"cashier",
+      "salary":"300"
+    }
   ]
 }

@@ -1,8 +1,10 @@
 import React from 'react'
+import {useParams} from 'react-router-dom'
 
 function SingleEmployee() {
+  const {id} = useParams()
   return (
-    <div>SingleEmployee</div>
+    <div>SingleEmployee {id}</div>
   )
 }
 

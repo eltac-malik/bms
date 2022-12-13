@@ -29,11 +29,11 @@ function Step() {
         onClick={()=>dispatch(setActiveStep(activeStep - 1))}
         sx={{ mr: 1 }}
       >
-        Back
+        Geri
       </Button>
 
       <Button type="submit">
-        {activeStep === steps.length - 1 ? "Finish" : "Next"}
+        {activeStep === steps.length - 1 ? "Tamamla" : "İrəli"}
       </Button>
     </div>
   );
