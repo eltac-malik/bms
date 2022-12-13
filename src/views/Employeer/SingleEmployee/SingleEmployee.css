@@ -1,0 +1,49 @@
+.single-employee
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contained-button-group
+{
+    width: 100%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-button
+{
+    width: 50%;
+    height: 60px;
+    font-size: 14px !important;
+    border: none !important;
+    background-color: #1565c0af !important;
+}
+
+.selected-single-button
+{
+    background-color: #1565c0 !important;
+    font-weight: bold;
+    font-size: 15px !important;
+}
+
+.goBack
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    margin: 10px 0;
+}
+
+.back-return
+{
+    background-color: red !important;
+    color: white !important;
+    border: none;
+}

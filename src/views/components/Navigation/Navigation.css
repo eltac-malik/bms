@@ -1,6 +1,6 @@
 .navbar
 {
-    background-color: rgb(225, 147, 3) !important;
+    background-color: #1A2238 !important;
 }
 
 .fa-user
@@ -9,7 +9,7 @@
     padding: 10px;
     font-size: 20px;
     border-radius: 50%;
-    color: rgb(225, 147, 3);
+    color: #FECD45;
 }
 
 .bottom-bar

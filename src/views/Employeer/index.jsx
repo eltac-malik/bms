@@ -27,7 +27,7 @@ export default function BasicTable() {
   return (
     <div className='employee-table'>
     <div className="operation">
-    <Button className='button-mui return' variant="contained" onClick={()=> navigate(-1)}>Go Back</Button>
+    <Button className='button-mui return' variant="contained" onClick={()=> navigate(-1)}>Geri</Button>
     <Button className='button-mui add-employee' variant="contained" onClick={()=> setOpen(true)}>İşçi əlavə et</Button>
     </div>
     <EmpModal open={open} setOpen={setOpen}/>

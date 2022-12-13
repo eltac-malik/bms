@@ -8,7 +8,7 @@ import Employeer from 'views/Employeer'
 import Sidebar from 'views/components/Sidebar'
 import Bottombar from 'views/components/Bottombar'
 import Navigation from 'views/components/Navigation'
-import SingleEmployee from 'views/Employeer/SingleEmployee'
+import SingleEmployee from 'views/Employeer/SingleEmployee/SingleEmployee'
 
 function App() {
 

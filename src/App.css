@@ -1,7 +1,6 @@
 *
 {
   text-decoration: none;
-
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -9,6 +8,14 @@
   text-align: center;
   font-family: 'Roboto', sans-serif !important;
 }
+
+.reseter
+{
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -72,6 +79,10 @@
 .return
 {
   background-color: red !important;
+  height: 40px !important;
+  width: 120px !important;
+  border: none !important;
+  color: white !important;
 }
 .simple-table
 {

@@ -18,4 +18,4 @@ export const thirdStepField =
     {name:"salary",label:"salary",type:'num'}
 ]
 
-export const steps = ['Personal', 'Contact', 'Work'];
+export const steps = ['Şəxsi', 'Əlaqə', 'Maaş'];

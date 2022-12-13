@@ -20,7 +20,7 @@ export default function TemporaryDrawer({bottom,setBottom}) {
     >
       <List>
         {bottomContent.map((e,i) => (
-          <Link to={e.url}>
+          <Link to={e.url} className='reseter'>
           <ListItem key={i} disablePadding>
             <ListItemButton>
               <ListItemIcon>
