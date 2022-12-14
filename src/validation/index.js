@@ -3,23 +3,23 @@ import {object,string} from 'yup'
 
 export const firstStepValidation = object(
 { 
-    name:string().required().min(3),
-    surname:string().required().min(3),
-    age:string().required(),
-    id_seria:string().required()
+    name:string() ,
+    surname:string()  ,
+    age:string() ,
+    id_seria:string() 
 })
 
 
 export const secondStepValidation = object(
 { 
-    location:string().required().min(3),
-    phone:string().required().min(3),
-    extra_phone:string().required().min(3)
+    location:string()  ,
+    phone:string()  ,
+    extra_phone:string()  
 })
 
 
 export const thirdStepValidation = object(
 { 
-    salary:string().required().min(3)
+    salary:string()  
 })
 

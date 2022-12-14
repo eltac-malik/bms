@@ -6,7 +6,8 @@ import {createSlice} from '@reduxjs/toolkit'
         name:"stepper",
         initialState:{
             activeStep:0,
-            skipped:new Set()
+            skipped:new Set(),
+            employeeModal:false
         },
         reducers:
         {
@@ -17,6 +18,10 @@ import {createSlice} from '@reduxjs/toolkit'
             setSkipped:(state,action)=>
             {
                 state.skipped = action.payload
+            },
+            setEmployeeModal:(state,action)=>
+            {
+                state.employeeModal = action.payload
             }
         }
     }
@@ -25,4 +30,4 @@ import {createSlice} from '@reduxjs/toolkit'
 
 
 export default stepperSlice.reducer
-export const {setActiveStep,setSkipped} = stepperSlice.actions
+export const {setActiveStep,setSkipped,setEmployeeModal} = stepperSlice.actions

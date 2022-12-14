@@ -7,13 +7,13 @@ import BadgeIcon from '@mui/icons-material/Badge';
 export const content = 
 [
     {
-        name:"Home",
+        name:"Ana səhifə",
         url:"/",
         icon:<HomeIcon/>
         
     },
     {
-        name:"Employeer",
+        name:"İşçilər",
         url:"/employeer",
         icon:<BadgeIcon/>
     }

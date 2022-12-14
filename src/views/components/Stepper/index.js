@@ -62,24 +62,13 @@ export default function HorizontalLinearStepper() {
           );
         })}
       </Stepper>
-      {activeStep === steps.length ? (
-        <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>
-            All steps completed - you&apos;re finished
-          </Typography>
-          <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-            <Box sx={{ flex: "1 1 auto" }} />
-            <Button onClick={() => dispatch(setActiveStep(0))}>Reset</Button>
-          </Box>
-        </React.Fragment>
-      ) : (
         <React.Fragment>
           <div className="central-step">{findStep(activeStep, handleNext)}</div>
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             {/* <StepOperations /> */}
           </Box>
         </React.Fragment>
-      )}
+      
     </Box>
   );
 }

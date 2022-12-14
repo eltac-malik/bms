@@ -75,6 +75,7 @@
 .add-employee
 {
   background-color: green !important;
+  height: 40px !important;
 }
 .return
 {

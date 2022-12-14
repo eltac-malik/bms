@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Stepper from 'views/components/Stepper';
+import {useDispatch, useSelector} from 'react-redux'
+import {setEmployeeModal} from 'redux/stepperSlice'
 
 const style = {
   position: 'absolute',
@@ -18,8 +20,10 @@ const style = {
   border:"none"
 };
 
-export default function TransitionsModal({open, setOpen}) {
-  const handleClose = () => setOpen(false);
+export default function TransitionsModal() {
+  const dispatch = useDispatch()
+  const handleClose = () => dispatch(setEmployeeModal(false));
+  const open = useSelector((state)=> state.stepper.employeeModal)
 
   return (
     <div>

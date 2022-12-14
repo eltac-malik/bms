@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { useSelector, useDispatch } from "react-redux";
-import {setActiveStep,setSkipped} from 'redux/stepperSlice'
+import {setActiveStep,setSkipped,setEmployeeModal} from 'redux/stepperSlice'
 import {steps} from 'common/constantField'
 
 function Step() {
@@ -12,6 +12,11 @@ function Step() {
   const isStepSkipped = (step) => {
     return skipped.has(step);
   };
+  const handleSubmit = ()=>
+  {
+    dispatch(setEmployeeModal(false))
+    dispatch(setActiveStep(0))
+  }
   const handleNext = () => {
     let newSkipped = skipped;
     if (isStepSkipped(activeStep)) {
@@ -32,7 +37,7 @@ function Step() {
         Geri
       </Button>
 
-      <Button type="submit">
+      <Button type="submit" onClick={()=> activeStep === steps.length - 1 && handleSubmit()}>
         {activeStep === steps.length - 1 ? "Tamamla" : "İrəli"}
       </Button>
     </div>

@@ -13,24 +13,24 @@ import EmpModal from 'views/components/Modals/EmpModal'
 import {Link} from 'react-router-dom'
 import {useQuery} from 'react-query'
 import {getAxios} from 'common/axios'
-
+import {useDispatch} from 'react-redux'
+import {setEmployeeModal} from 'redux/stepperSlice'
 
 export default function BasicTable() {
-  const [open, setOpen] = React.useState(false);
   const {isLoading,data} = useQuery("Employeers",()=> getAxios("employeers"))
   const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   if (isLoading) {
     return "waiting..."
   }
-
   return (
     <div className='employee-table'>
     <div className="operation">
     <Button className='button-mui return' variant="contained" onClick={()=> navigate(-1)}>Geri</Button>
-    <Button className='button-mui add-employee' variant="contained" onClick={()=> setOpen(true)}>İşçi əlavə et</Button>
+    <Button className='button-mui  add-employee' variant="contained" onClick={()=> dispatch(setEmployeeModal(true))}>İşçi əlavə et</Button>
     </div>
-    <EmpModal open={open} setOpen={setOpen}/>
+    <EmpModal />
     <TableContainer className='emp-table' component={Paper}>
       <Table aria-label="simple table">
         <TableHead>

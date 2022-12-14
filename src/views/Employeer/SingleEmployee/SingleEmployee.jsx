@@ -4,6 +4,7 @@ import { useParams,useNavigate } from "react-router-dom";
 import './SingleEmployee.css'
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import Profile from 'views/Employeer/EmployeerProfile';
 
 function SingleEmployee() {
   const { id } = useParams();
@@ -24,6 +25,8 @@ function SingleEmployee() {
       onClick={()=> setClick(true)}
       className={`single-button ${click&&"selected-single-button"}`}>Maaş cədvəli</Button>
     </ButtonGroup>
+    
+    <Profile/>
     </div>
   );
 }
