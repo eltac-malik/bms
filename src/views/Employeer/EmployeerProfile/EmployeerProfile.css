@@ -1,0 +1,29 @@
+.emp-profile
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.profile-input
+{
+    width: 90%;
+    outline: none !important;
+    margin: 10px 0 !important;
+}
+
+.changes
+{
+    width: 140px;
+    background-color: #fa841a !important;
+    border: none !important;
+    color: white !important;
+}
+
+.save-profile
+{
+    background-color: green !important;
+}

@@ -25,8 +25,7 @@ function SingleEmployee() {
       onClick={()=> setClick(true)}
       className={`single-button ${click&&"selected-single-button"}`}>Maaş cədvəli</Button>
     </ButtonGroup>
-    
-    <Profile/>
+    {!click&&<Profile/>}
     </div>
   );
 }

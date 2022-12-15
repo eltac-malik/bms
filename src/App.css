@@ -68,6 +68,11 @@
   background-color: #1A2238 !important;
 }
 
+.def-btn
+{
+  height: 40px !important;
+}
+
 .button-mui
 {
   background-color:#003f7d !important;
