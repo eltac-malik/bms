@@ -1,0 +1,39 @@
+.salary-page
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filter-salary-group
+{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-field
+{
+    width: 80% !important;
+    margin: 5px 0;
+}
+
+.filter-date-field
+{
+    width: 15% !important;
+    margin-left: 5px !important;
+}
+
+
+
+@media (max-width:768px)
+{
+    .filter-salary-group
+    {
+        margin-top: 5px !important;
+    }    
+}

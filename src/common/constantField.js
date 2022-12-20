@@ -19,3 +19,26 @@ export const thirdStepField =
 ]
 
 export const steps = ['Şəxsi', 'Əlaqə', 'Maaş'];
+
+export const categories = 
+[
+'Kassa',
+'Xidmətçi',
+'Qastranom',
+'Qab-qacaq və Xırdavat',
+'Qeyri-qida',
+'Şirniyyat və Konfet',
+'Ətir',
+'Meyvə Tərəvəz',
+'Qastranom'
+]
+
+
+export const filterByTime = 
+[
+    "Günlük",
+    "Heftelik",
+    "Ayliq",
+    "Rubluk",
+    "Illik"
+]

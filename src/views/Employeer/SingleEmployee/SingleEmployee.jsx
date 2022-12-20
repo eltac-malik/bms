@@ -5,6 +5,7 @@ import './SingleEmployee.css'
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Profile from 'views/Employeer/EmployeerProfile';
+import SalaryHistory from 'views/Employeer/SalaryHistory'
 
 function SingleEmployee() {
   const { id } = useParams();
@@ -18,14 +19,14 @@ function SingleEmployee() {
     </ButtonGroup>
 
     <ButtonGroup variant="contained" className='contained-button-group' aria-label="outlined primary button group">
-      <Button
-      onClick={()=> setClick(false)}  
-      className={`single-button ${!click&&"selected-single-button"}`}>Informasiya</Button>
       <Button 
       onClick={()=> setClick(true)}
       className={`single-button ${click&&"selected-single-button"}`}>Maaş cədvəli</Button>
+      <Button
+      onClick={()=> setClick(false)}  
+      className={`single-button ${!click&&"selected-single-button"}`}>Informasiya</Button>
     </ButtonGroup>
-    {!click&&<Profile/>}
+    {click?<SalaryHistory/>:<Profile/>}
     </div>
   );
 }
