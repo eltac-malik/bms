@@ -10,6 +10,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import './SalaryHistory.css'
 import {filterByTime} from 'common/constantField'
+import TimeLine from 'views/components/TimeLine'
 
 function Index() {
   const [value, setValue] = React.useState(null);
@@ -55,6 +56,7 @@ function Index() {
     </LocalizationProvider>
       </div>
 
+        <TimeLine/>
     </div>
   )
 }
