@@ -37,10 +37,10 @@ export default function ButtonAppBar({setLeft,setBottom}) {
           <Button onClick={()=> setBottom(true)} color="inherit">
           <AccountCircleIcon/>
           </Button>
-          <select onChange={(e)=> i18n.changeLanguage(e.target.value)}>
+          {/* <select onChange={(e)=> i18n.changeLanguage(e.target.value)}>
             <option value='en'>Eng</option>
             <option value='az'>Az</option>
-          </select>
+          </select> */}
         </Toolbar>
       </AppBar>
     </Box>

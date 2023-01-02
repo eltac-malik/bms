@@ -9,6 +9,7 @@ import Sidebar from 'views/components/Sidebar'
 import Bottombar from 'views/components/Bottombar'
 import Navigation from 'views/components/Navigation'
 import SingleEmployee from 'views/Employeer/SingleEmployee/SingleEmployee'
+import Salary from 'views/Salary'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='/settings' element={<Settings/>}/>
         <Route path='/employeer' element={<Employeer/>}/>
         <Route path='/employeer/:id' element={<SingleEmployee/>}/>
+        <Route path='/add-salary' element={<Salary/>}/>
       </Routes>
      </Router>
     </div>

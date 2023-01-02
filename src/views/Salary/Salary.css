@@ -1,0 +1,20 @@
+.salary
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.salary-time
+{
+    color: blue;
+    width: 90%;
+}
+
+.MuiOutlinedInput-notchedOutline,
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline
+{
+    border-color: silver !important;
+}
