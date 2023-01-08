@@ -1,13 +1,13 @@
 import React from 'react'
 import style from './Home.module.css'
-import PieChart from 'views/components/Charts/PieChart'
+import StatusBar from 'views/components/StatusBar'
 import List from 'views/components/ListView'
 
 
 function Home() {
   return (
     <div className={style.home}>
-      <PieChart/>
+      <StatusBar/>
       <List/>
     </div>
   )

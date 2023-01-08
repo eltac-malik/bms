@@ -2,3 +2,18 @@
 {
     width: 100%;
 }
+.list_item_text_content
+{
+    width: 100%;
+    display: flex;
+}
+.money_price
+{
+    font-size: 18px;
+    color: red;
+    font-weight: 900;
+}
+.money_price span
+{
+    font-size: 14px;
+}

@@ -1,0 +1,56 @@
+.status-bar-main
+{
+    width: 95%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.statistic-bar
+{
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: blue;
+    margin: 3px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.winner
+{
+    background-color: #2fb201;
+}
+.loser
+{
+    background-color: #e62b2b;
+}
+.statistic-title
+{
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+}
+.sum-count
+{
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.sum-count span
+{
+    font-size: 20px;
+}
+
+@media(min-width:900px)
+{
+    .statistic-bar
+    {
+        width: 50%;
+    }
+}
